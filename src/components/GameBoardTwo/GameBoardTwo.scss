@@ -1,0 +1,58 @@
+.game {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .wooden-text {
+        margin-bottom: 10px;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        color: white;
+        mix-blend-mode: darken;
+        text-shadow: 0 0 0.05em rgba(0, 0, 0, 0.2),
+                     -0.025em 0.025em 0.1em #000,
+                     -0.05em 0.05em 0.1em #000,
+                     -0.1em 0.1em 0.3em #000,
+                     -0.1em 0.1em 0.5em rgba(0, 0, 0, 0.5);
+        translate: translate3d(0, 0, 0);
+        font-family: 'Muli', sans-serif;
+        line-height: 1;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: nowrap;
+        font-size: 20px;
+      }
+
+    .game-board-one {
+        margin-left: -25px;
+        display: grid;
+        grid-template-rows: 150px 150px 150px;
+        grid-template-columns: 150px 150px;
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+    }
+    
+    .game-board-two {
+        margin-left: -20px;
+        display: grid;
+        grid-template-rows: 90px 90px 90px 90px;
+        grid-template-columns: 90px 90px 90px;
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+    }
+    
+    .game-board-three {
+        margin-left: -10px;
+        display: grid;
+        grid-template-rows: 80px 80px 80px 80px 80px;
+        grid-template-columns: 80px 80px 80px 80px;
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+    }
+}
