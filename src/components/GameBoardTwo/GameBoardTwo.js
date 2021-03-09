@@ -114,9 +114,12 @@ class GameBoardTwo extends Component {
              (this.state.matchedCards.length === 12 && this.state.level === 2) ||
              (this.state.matchedCards.length === 20 && this.state.level === 3)
             ) {
-            if (this.state.level === 3) {
-                this.setState({ highScore: this.state.score})
-            }
+            // if (this.state.level === 3) {
+            //     if (this.state.highScore < this.state.score) {
+            //         this.setState({highScore: this.state.score})
+            //         localStorage.setItem("highScore", JSON.stringify(this.state.highScore))
+            //     }
+            // }
             tempCards.forEach(item => item.open === true ? item.open = false: item.open=false)
             this.setState({ 
                 level: this.state.level+1,

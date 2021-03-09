@@ -5,14 +5,13 @@
     flex-direction: column;
     justify-content: center;
         .wooden-text {
-            padding: 15px;
             position: relative;
             top: 0;
             left: 0;
             display: flex;
             justify-content: center;
             flex-direction: column;
-            width: 90%;
+            width: 325px;
             height: 100%;
             color: white;
             mix-blend-mode: darken;
@@ -22,15 +21,25 @@
                          -0.1em 0.1em 0.3em #000,
                          -0.1em 0.1em 0.5em rgba(0, 0, 0, 0.5);
             font-family: 'Muli', sans-serif;
-            line-height: 1;
             font-weight: 900;
             text-align: center;
-            text-transform: uppercase;
             white-space: nowrap;
             font-size: 35px;
             .level {
                 font-size: 25px;
+                
             }
+            .table {padding: 5px;
+                height:auto;
+                font-size: 15px;
+                border: 1px solid black;
+                    
+                th {
+                    text-align: left;
+                }
+                
+            }
+    
         }
     
 }

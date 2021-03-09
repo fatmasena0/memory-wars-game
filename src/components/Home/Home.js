@@ -5,8 +5,9 @@ import './Home.scss'
 
 class Home extends Component {
     state = {
-        name: ''
+        name: 'anonymous'
     }
+
     render() {
     return (
         <div className="home">
