@@ -12,24 +12,24 @@ import Result from "./components/Result/Result"
 const App = () => {
   return (
     <div className="App">
-    <Router>
-      <nav className="navbar">
-        <div className="wooden-text">
-          <div>Memory Wars</div>
-        </div>      
-      </nav>
+      <Router>
+        <nav className="navbar">
+          <div className="wooden-text">
+            <div>Memory Wars</div>
+          </div>
+        </nav>
         <Switch>
           <Route path="/game">
-              <GameBoardTwo />
+            <GameBoardTwo />
           </Route>
           <Route path="/result">
-              <Result />
+            <Result />
           </Route>
           <Route path="/">
             <Home />
           </Route>
         </Switch>
-    </Router>
+      </Router>
     </div>
   )
 }
